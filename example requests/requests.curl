@@ -1,0 +1,40 @@
+# GET /fotoweb/
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/' \
+--header 'Accept: application/vnd.fotoware.api-descriptor+json'
+
+
+# GET /fotoweb/archives/{archive}
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
+--header 'Accept: application/vnd.fotoware.assetlist+json'
+
+
+# GET /fotoweb/archives/{archive}/Arkiv/{filename}.info
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info' \
+--header 'Accept: application/vnd.fotoware.asset+json'
+
+
+# GET /fotoweb/archives
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives' \
+--header 'Accept: application/vnd.fotoware.collectionlist+json'
+
+
+# GET /fotoweb/archives/{archive}
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
+--header 'Accept: application/vnd.fotoware.collection+json'
+
+
+# GET /fotoweb/archives/{archive}
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
+--header 'Accept: application/vnd.fotoware.collectioninfo+json'
+
+
+# GET /fotoweb/archives/{archive}/?{field name}={field content}
+
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire' \
+--header 'Accept: application/vnd.fotoware.assetlist+json'
