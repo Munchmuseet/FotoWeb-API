@@ -10,7 +10,7 @@ The API contains paintings, graphics, drawings, sculptures, photographies and do
 
 These are only examples. Any application that needs to read data from a FotoWeb server and maybe manipulate some of this data can make use of the FotoWeb API. See [FotoWare](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API) For full documentation.
 
-The API is also documented on [Postman](https://documenter.getpostman.com/view/2789837/S1TPbLh5?version=latest).
+The API is also documented with [Postman](https://documenter.getpostman.com/view/2789837/S1TPbLh5?version=latest).
 
 ## Overview
 Dataformats:
