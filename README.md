@@ -45,38 +45,6 @@ API descriptor: This is a JSON document, returned in the response body, which co
 | Key | Value |
 | --- | ----- |
 | Accept | application/vnd.fotoware.api-descriptor+json |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.api-descriptor+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/' \
---header 'Accept: application/vnd.fotoware.api-descriptor+json'
-```
-JavaScript jQuery
-```JavaScript
-var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Accept": "application/vnd.fotoware.api-descriptor+json"
-  },
-};
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-```
 ---
 ### GET /fotoweb/archives/5014-Malerier
 `https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier`
@@ -87,40 +55,6 @@ Asset list: The JSON representation of a list of assets in the FotoWeb RESTful A
 | Key | Value |
 | --- | ----- |
 | Accept | application/vnd.fotoware.assetlist+json |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.assetlist+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
---header 'Accept: application/vnd.fotoware.assetlist+json'
-```
-
-JavaScript jQuery
-```JavaScript
-var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Accept": "application/vnd.fotoware.assetlist+json"
-  },
-};
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-```
 ---
 ### GET /fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info
 `https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info`
@@ -131,40 +65,6 @@ Asset: The JSON format that represents an asset in the FotoWeb RESTful API. This
 | Key | Value |
 | --- | ----- |
 | Accept | application/vnd.fotoware.asset+json |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.asset+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info' \
---header 'Accept: application/vnd.fotoware.asset+json'
-```
-
-JavaScript jQuery
-```JavaScript
-var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Accept": "application/vnd.fotoware.asset+json"
-  },
-};
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-```
 ---
 ### GET /fotoweb/archives
 `https://foto.munchmuseet.no/fotoweb/archives`
@@ -175,40 +75,6 @@ Collection list: The JSON format that represents a list of collections in the Fo
 | Key | Value |
 | --- | ----- |
 | Accept | application/vnd.fotoware.collectionlist+json |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.collectionlist+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives' \
---header 'Accept: application/vnd.fotoware.collectionlist+json'
-```
-
-JavaScript jQuery
-```JavaScript
-var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Accept": "application/vnd.fotoware.collectionlist+json"
-  },
-};
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-```
 ---
 ### GET /fotoweb/archives/5014-Malerier
 `https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier`
@@ -219,24 +85,6 @@ Collection: The JSON representation of a collection in the FotoWeb RESTful API. 
 | Key | Value |
 | --- | ----- |
 | Accept | application/vnd.fotoware.collection+json |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.collection+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
---header 'Accept: application/vnd.fotoware.collection+json'
-```
 ---
 ### GET /fotoweb/archives/5014-Malerier
 `https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier`
@@ -247,40 +95,6 @@ Collection info: The JSON representation of a collection in the FotoWeb RESTful 
 | Key | Value |
 | --- | ----- |
 | Accept | application/vnd.fotoware.collectioninfo+json |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.collectioninfo+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
---header 'Accept: application/vnd.fotoware.collectioninfo+json'
-```
-
-JavaScript jQuery
-```JavaScript
-var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Accept": "application/vnd.fotoware.collectioninfo+json"
-  },
-};
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-```
 ---
 ### GET /fotoweb/archives/5014-Malerier/?105=vampire
 `https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire`
@@ -312,37 +126,3 @@ Available metadata search fields are:
 | Key | Value |
 | --- | ----- |
 | 105 | vampire |
-
-#### Example requests
-
-C#
-```C#
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire");
-client.Timeout = -1;
-var request = new RestRequest(Method.GET);
-request.AddHeader("Accept", "application/vnd.fotoware.assetlist+json");
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
-```
-
-cURL
-```cURL
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire' \
---header 'Accept: application/vnd.fotoware.assetlist+json'
-```
-
-JavaScript jQuery
-```JavaScript
-var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Accept": "application/vnd.fotoware.assetlist+json"
-  },
-};
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-```
