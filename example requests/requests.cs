@@ -10,7 +10,7 @@ Console.WriteLine(response.Content);
 
 // GET /fotoweb/archives/{archive}
 
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier");
+var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Accept", "application/vnd.fotoware.assetlist+json");
@@ -18,9 +18,9 @@ IRestResponse response = client.Execute(request);
 Console.WriteLine(response.Content);
 
 
-// GET /fotoweb/archives/{archive}/Arkiv/{filename}.info
+// GET /fotoweb/archives/{archive}/Assets/Arkiv/{filename}.info
 
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info");
+var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Accept", "application/vnd.fotoware.asset+json");
@@ -40,7 +40,7 @@ Console.WriteLine(response.Content);
 
 // GET /fotoweb/archives/{archive}
 
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier");
+var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Accept", "application/vnd.fotoware.collection+json");
@@ -50,7 +50,7 @@ Console.WriteLine(response.Content);
 
 // GET /fotoweb/archives/{archive}
 
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier");
+var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Accept", "application/vnd.fotoware.collectioninfo+json");
@@ -60,7 +60,7 @@ Console.WriteLine(response.Content);
 
 // GET /fotoweb/archives/{archive}/?{field name}={field content}
 
-var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire");
+var client = new RestClient("https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/?105=vampire");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Accept", "application/vnd.fotoware.assetlist+json");
