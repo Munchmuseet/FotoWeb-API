@@ -42,7 +42,7 @@ import (
 
 func main() {
 
-  url := "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier"
+  url := "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier"
   method := "GET"
 
   client := &http.Client {
@@ -62,7 +62,7 @@ func main() {
 }
 
 
-# GET /fotoweb/archives/{archive}/Arkiv/{filename}.info
+# GET /fotoweb/archives/{archive}/Assets/Arkiv/{filename}.info
 
 package main
 
@@ -74,7 +74,7 @@ import (
 
 func main() {
 
-  url := "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info"
+  url := "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info"
   method := "GET"
 
   client := &http.Client {
@@ -138,7 +138,7 @@ import (
 
 func main() {
 
-  url := "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier"
+  url := "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier"
   method := "GET"
 
   client := &http.Client {
@@ -170,7 +170,7 @@ import (
 
 func main() {
 
-  url := "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier"
+  url := "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier"
   method := "GET"
 
   client := &http.Client {
@@ -202,7 +202,7 @@ import (
 
 func main() {
 
-  url := "https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire"
+  url := "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/?105=vampire"
   method := "GET"
 
   client := &http.Client {
