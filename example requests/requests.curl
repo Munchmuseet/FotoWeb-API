@@ -6,13 +6,13 @@ curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/' \
 
 # GET /fotoweb/archives/{archive}
 
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier' \
 --header 'Accept: application/vnd.fotoware.assetlist+json'
 
 
-# GET /fotoweb/archives/{archive}/Arkiv/{filename}.info
+# GET /fotoweb/archives/{archive}/Assets/Arkiv/{filename}.info
 
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/Arkiv/M0112_20190403.tif.info' \
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info' \
 --header 'Accept: application/vnd.fotoware.asset+json'
 
 
@@ -24,17 +24,17 @@ curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives' \
 
 # GET /fotoweb/archives/{archive}
 
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier' \
 --header 'Accept: application/vnd.fotoware.collection+json'
 
 
 # GET /fotoweb/archives/{archive}
 
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier' \
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier' \
 --header 'Accept: application/vnd.fotoware.collectioninfo+json'
 
 
 # GET /fotoweb/archives/{archive}/?{field name}={field content}
 
-curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5014-Malerier/?105=vampire' \
+curl --location --request GET 'https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/?105=vampire' \
 --header 'Accept: application/vnd.fotoware.assetlist+json'
