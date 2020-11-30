@@ -20,13 +20,13 @@ Supported methods:
 - GET
 
 Available archives in the Munch Museum's API are:
-- 5000-Malerier (paintings)
-- 5001-Grafikk (graphics)
-- 5002-Tegninger (drawings)
-- 5003-Skulpturer (sculptures)
-- 5004-Fotografi (photographies)
-- 5005-Dokumentarfoto (documentary photographies)
-- 5014-Stenersensamlingene (the Stenersen collections)
+* 5026-Malerier (paintings)
+* 5011-Grafikk (graphics)
+* 5020-Tegninger (drawings)
+* 5018-Skulpturer (sculptures)
+* 5010-Fotografi (photographies)
+* 5005-Dokumentarfoto (documentary photographies)
+* 5019-Stenersensamlingene (the Stenersen collections)
 
 ## Authentication
 No authentication is needed for the public entry point.
@@ -39,7 +39,7 @@ The most important status codes are:
 - 500 Internal Server Error (The request is valid, but there was a problem on the server-side)
 ---
 ### GET /fotoweb/
-`https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier`
+`https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier`
 
 API descriptor: This is a JSON document, returned in the response body, which contains information about the API. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/04_API_Entry_Points) for full documentation.
 
@@ -48,8 +48,8 @@ API descriptor: This is a JSON document, returned in the response body, which co
 | --- | ----- |
 | Accept | application/vnd.fotoware.api-descriptor+json |
 ---
-### GET /fotoweb/archives/5000-Malerier
-`https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier`
+### GET /fotoweb/archives/5026-Malerier
+`https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier`
 
 Asset list: The JSON representation of a list of assets in the FotoWeb RESTful API. Every collection has an asset list. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/Asset_list_representation) for full documentation.
 
@@ -58,8 +58,8 @@ Asset list: The JSON representation of a list of assets in the FotoWeb RESTful A
 | --- | ----- |
 | Accept | application/vnd.fotoware.assetlist+json |
 ---
-### GET /fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info
-`https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info`
+### GET /fotoweb/archives/5026-Malerier/Arkiv/M0112_20190403.tif.info
+`https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier/Arkiv/M0112_20190403.tif.info`
 
 Asset: The JSON format that represents an asset in the FotoWeb RESTful API. This is the application/vnd.fotoware.asset+json media type. It is also used as part of the representation of an asset list. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/Asset_representation) for full documentation.
 
@@ -78,7 +78,7 @@ Collection list: The JSON format that represents a list of collections in the Fo
 | --- | ----- |
 | Accept | application/vnd.fotoware.collectionlist+json |
 ---
-### GET /fotoweb/archives/5000-Malerier
+### GET /fotoweb/archives/5026-Malerier
 `https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier`
 
 Collection: The JSON representation of a collection in the FotoWeb RESTful API. This request contains only information about the collection itself. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/Collection_representation) for full documentation.
@@ -88,8 +88,8 @@ Collection: The JSON representation of a collection in the FotoWeb RESTful API. 
 | --- | ----- |
 | Accept | application/vnd.fotoware.collection+json |
 ---
-### GET /fotoweb/archives/5000-Malerier
-`https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier`
+### GET /fotoweb/archives/5026-Malerier
+`https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier`
 
 Collection info: The JSON representation of a collection in the FotoWeb RESTful API, with assets and sub collections. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/Collection_representation) for full documentation.
 
@@ -98,8 +98,8 @@ Collection info: The JSON representation of a collection in the FotoWeb RESTful 
 | --- | ----- |
 | Accept | application/vnd.fotoware.collectioninfo+json |
 ---
-### GET /fotoweb/archives/5000-Malerier/?105=vampire
-`https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/?105=vampire`
+### GET /fotoweb/archives/5026-Malerier/?105=vampire
+`https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier/?105=vampire`
 
 Collection query: Collection queries are search queries for assets in a single collection. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/Collection_Queries) for full documentation.
 
