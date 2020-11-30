@@ -17,7 +17,7 @@ $.ajax(settings).done(function (response) {
 // GET /fotoweb/archives/{archive}
 
 var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier",
+  "url": "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier",
   "method": "GET",
   "timeout": 0,
   "headers": {
@@ -30,10 +30,10 @@ $.ajax(settings).done(function (response) {
 });
 
 
-// GET /fotoweb/archives/{archive}/Assets/Arkiv/{filename}.info
+// GET /fotoweb/archives/{archive}/Arkiv/{filename}.info
 
 var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info",
+  "url": "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier/Arkiv/M0112_20190403.tif.info",
   "method": "GET",
   "timeout": 0,
   "headers": {
@@ -65,7 +65,7 @@ $.ajax(settings).done(function (response) {
 // GET /fotoweb/archives/{archive}
 
 var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier",
+  "url": "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier",
   "method": "GET",
   "timeout": 0,
   "headers": {
@@ -81,7 +81,7 @@ $.ajax(settings).done(function (response) {
 // GET /fotoweb/archives/{archive}
 
 var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier",
+  "url": "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier",
   "method": "GET",
   "timeout": 0,
   "headers": {
@@ -97,7 +97,7 @@ $.ajax(settings).done(function (response) {
 // GET /fotoweb/archives/{archive}/?{field name}={field content}
 
 var settings = {
-  "url": "https://foto.munchmuseet.no/fotoweb/archives/5000-Malerier/?105=vampire",
+  "url": "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier/?105=vampire",
   "method": "GET",
   "timeout": 0,
   "headers": {
