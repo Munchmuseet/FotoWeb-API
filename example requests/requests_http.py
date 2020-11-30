@@ -22,13 +22,13 @@ payload = ''
 headers = {
   'Accept': 'application/vnd.fotoware.assetlist+json'
 }
-conn.request("GET", "/fotoweb/archives/5000-Malerier", payload, headers)
+conn.request("GET", "/fotoweb/archives/5026-Malerier", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
 
 
-# GET /fotoweb/archives/{archive}/Assets/Arkiv/{filename}.info
+# GET /fotoweb/archives/{archive}/Arkiv/{filename}.info
 
 import http.client
 import mimetypes
@@ -37,7 +37,7 @@ payload = ''
 headers = {
   'Accept': 'application/vnd.fotoware.asset+json'
 }
-conn.request("GET", "/fotoweb/archives/5000-Malerier/Assets/Arkiv/M0112_20190403.tif.info", payload, headers)
+conn.request("GET", "/fotoweb/archives/5026-Malerier/Assets/Arkiv/M0112_20190403.tif.info", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -67,7 +67,7 @@ payload = ''
 headers = {
   'Accept': 'application/vnd.fotoware.collection+json'
 }
-conn.request("GET", "/fotoweb/archives/5000-Malerier", payload, headers)
+conn.request("GET", "/fotoweb/archives/5026-Malerier", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -82,7 +82,7 @@ payload = ''
 headers = {
   'Accept': 'application/vnd.fotoware.collectioninfo+json'
 }
-conn.request("GET", "/fotoweb/archives/5000-Malerier", payload, headers)
+conn.request("GET", "/fotoweb/archives/5026-Malerier", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -97,7 +97,7 @@ payload = ''
 headers = {
   'Accept': 'application/vnd.fotoware.assetlist+json'
 }
-conn.request("GET", "/fotoweb/archives/5000-Malerier/?105=vampire", payload, headers)
+conn.request("GET", "/fotoweb/archives/5026-Malerier/?105=vampire", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
