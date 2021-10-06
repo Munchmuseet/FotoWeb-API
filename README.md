@@ -116,7 +116,7 @@ Available metadata search fields are:
 | 201 | Catalogue Raisonné |
 | 203 | Datert |
 | 209 | Mål |
-| 212 | Registreringsnummer (unique valies for objects across APIs) |
+| 212 | Registreringsnummer (unique values for objects across APIs) |
 | 315 | Vilkår for bruk |
 
 #### HEADERS
