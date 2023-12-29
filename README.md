@@ -58,8 +58,9 @@ Asset list: The JSON representation of a list of assets in the FotoWeb RESTful A
 | --- | ----- |
 | Accept | application/vnd.fotoware.assetlist+json |
 ---
-### GET /fotoweb/archives/5013-Malerier/Arkiv/M0112_20190403.tif.info
-`https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier/Arkiv/M0112_20190403.tif.info`
+### GET /fotoweb/archives/5013-Malerier/Arkiv/MM.M.00112_20190403.tif.info
+`https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier/Arkiv/MM.M.00112_20190403.tif.info`
+
 
 Asset: The JSON format that represents an asset in the FotoWeb RESTful API. This is the application/vnd.fotoware.asset+json media type. It is also used as part of the representation of an asset list. See [link](https://learn.fotoware.com/02_FotoWeb_8.0/Integrating_FotoWeb_with_third-party_systems/001_The_FotoWeb_API/Asset_representation) for full documentation.
 
