@@ -19,14 +19,14 @@ Dataformats:
 Supported methods:
 - GET
 
-Available archives in the Munch Museum's API are:
-* 5026-Malerier (paintings)
-* 5011-Grafikk (graphics)
-* 5020-Tegninger (drawings)
-* 5018-Skulpturer (sculptures)
-* 5010-Fotografi (photographies)
-* 5005-Dokumentarfoto (documentary photographies)
-* 5019-Stenersensamlingene (the Stenersen collections)
+Available public archives in the Munch Museum's API are:
+* 5013-Malerier (paintings)
+* 5014-Grafikk (graphics)
+* 5015-Tegninger (drawings)
+* 5032-Skulpturer (sculptures)
+* 5016-Fotografi (photographies)
+* 5017-Dokumentarfoto (documentary photographies)
+* 5018-Stenersensamlingene (the Stenersen collections)
 
 ## Authentication
 No authentication is needed for the public entry point.
