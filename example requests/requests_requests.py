@@ -19,7 +19,7 @@ print(response.text.encode('utf8'))
 
 import requests
 
-url = "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier"
+url = "https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier"
 
 payload = {}
 headers = {
@@ -36,7 +36,7 @@ print(response.text.encode('utf8'))
 
 import requests
 
-url = "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier/Arkiv/M0112_20190403.tif.info"
+url = "https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier/Arkiv/M0112_20190403.tif.info"
 
 payload = {}
 headers = {
@@ -70,7 +70,7 @@ print(response.text.encode('utf8'))
 
 import requests
 
-url = "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier"
+url = "https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier"
 
 payload = {}
 headers = {
@@ -87,7 +87,7 @@ print(response.text.encode('utf8'))
 
 import requests
 
-url = "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier"
+url = "https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier"
 
 payload = {}
 headers = {
@@ -104,7 +104,7 @@ print(response.text.encode('utf8'))
 
 import requests
 
-url = "https://foto.munchmuseet.no/fotoweb/archives/5026-Malerier/?105=vampire"
+url = "https://foto.munchmuseet.no/fotoweb/archives/5013-Malerier/?105=vampire"
 
 payload = {}
 headers = {
